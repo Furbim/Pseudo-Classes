@@ -1,0 +1,152 @@
+/* Pseudoclasses dinâmicas */
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: orange;
+}
+
+/* Pseudoclasses de estado do formulário */
+input:focus {
+    border-color: green;
+}
+input:disabled {
+    background-color: lightgray;
+}
+input:checked {
+    outline: 2px solid green;
+}
+input:valid {
+    border-color: blue;
+}
+input:invalid {
+    border-color: red;
+}
+input:in-range {
+    background-color: lightgreen;
+}
+input:out-of-range {
+    background-color: lightcoral;
+}
+input:required {
+    border-left: 5px solid orange;
+}
+input:optional {
+    border-left: 5px solid gray;
+}
+
+/* Pseudoclasses estruturais */
+p:first-child {
+    font-weight: bold;
+}
+p:last-child {
+    font-style: italic;
+}
+p:nth-child(odd) {
+    color: blue;
+}
+p:nth-child(even) {
+    color: green;
+}
+p:nth-last-child(2) {
+    text-decoration: underline;
+}
+p:first-of-type {
+    background-color: yellow;
+}
+p:last-of-type {
+    background-color: pink;
+}
+p:nth-of-type(2) {
+    background-color: lightblue;
+}
+p:nth-last-of-type(1) {
+    background-color: lightgreen;
+}
+p:only-child {
+    font-size: 2em;
+}
+p:only-of-type {
+    color: red;
+}
+
+/* Pseudoclasse de negação */
+p:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* Outras pseudoclasses */
+li:nth-of-type(2) {
+    color: red;
+}
+li:nth-last-of-type(1) {
+    color: blue;
+}
+div:empty {
+    background-color: yellow;
+    height: 50px;
+}
+p::first-line {
+    font-size: 1.2em;
+}
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+p::selection {
+    background: yellow;
+    color: black;
+}
+input:read-only {
+    background-color: lightgray;
+}
+input:read-write {
+    background-color: white;
+}
+
+/* Pseudoclasses de ativação e alvo */
+button:enabled {
+    background-color: green;
+    color: white;
+}
+button:disabled {
+    background-color: gray;
+    color: darkgray;
+}
+button:hover {
+    background-color: darkgreen;
+}
+button:focus {
+    outline: 2px solid blue;
+}
+a:target {
+    background-color: yellow;
+}
+
+/* Pseudoclasse de linguagem */
+p:lang(pt) {
+    color: blue;
+}
+p:lang(en) {
+    color: red;
+}
+
+/* Pseudoclasses de grupo */
+:is(h1, h2, h3) {
+    font-family: Arial, sans-serif;
+}
+:where(section, article) {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Pseudoclasses com contador */
+ol > li::marker {
+    color: red;
+}

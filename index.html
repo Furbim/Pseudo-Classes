@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exemplos de Pseudoclasses</h1>
+    
+    <h2>Pseudoclasses Dinâmicas</h2>
+    <a href="#">Link Normal</a><br>
+    <a href="#" class="visited">Link Visitado</a>
+
+    <h2>Pseudoclasses de Formulário</h2>
+    <form>
+        <input type="text" placeholder="Focus em mim"><br>
+        <input type="text" disabled placeholder="Desabilitado"><br>
+        <input type="checkbox" checked> Check me<br>
+        <input type="text" required placeholder="Campo obrigatório"><br>
+        <input type="text" pattern="[A-Za-z]+" placeholder="Somente letras"><br>
+        <input type="number" min="1" max="10" placeholder="1 a 10"><br>
+        <input type="text" value="Read-only" readonly><br>
+        <input type="text" placeholder="Read-write">
+    </form>
+
+    <h2>Pseudoclasses Estruturais</h2>
+    <div>
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        <p>Terceiro parágrafo</p>
+        <p>Quarto parágrafo</p>
+        <p>Quinto parágrafo</p>
+    </div>
+
+    <h2>Pseudoclasse de Negação</h2>
+    <div>
+        <p>Primeiro</p>
+        <p>Não primeiro</p>
+        <p>Também não primeiro</p>
+    </div>
+
+    <h2>Outras Pseudoclasses</h2>
+    <ul>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+        <li>Último item</li>
+    </ul>
+    <div></div>
+    <div>
+        <p>::first-line, ::first-letter e ::selection</p>
+    </div>
+
+    <h2>Ativação e Alvo</h2>
+    <a href="#target-element">Clique para ver o alvo</a>
+    <p id="target-element">Eu sou o elemento alvo!</p>
+    <button>Habilitado</button>
+    <button disabled>Desabilitado</button>
+
+    <h2>Pseudoclasses de Linguagem</h2>
+    <p lang="en">English paragraph.</p>
+    <p lang="pt">Parágrafo em portugues.</p>
+
+    <h2>Pseudoclasses de Grupo</h2>
+    <h1>Este é um H1</h1>
+    <h2>Este é um H2</h2>
+    <h3>Este é um H3</h3>
+    <section>
+        <article>Este é um artigo dentro de uma seção.</article>
+    </section>
+
+    <h2>Pseudoclasses com Contador</h2>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+</body>
+</html>
